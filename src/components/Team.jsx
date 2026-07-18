@@ -15,7 +15,7 @@ export default function Team() {
             <Reveal key={member.name} delay={100 * i}>
               <div className="arch mx-auto max-w-[220px]">
                 <img
-                  src={member.photo}
+                  src={member.image}
                   alt={`Portrait de ${member.name}`}
                   loading="lazy"
                   className="h-64 w-full object-cover md:h-72"

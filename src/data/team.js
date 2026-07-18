@@ -3,21 +3,21 @@ export const TEAM = [
   {
     name: "Emmanuella VIGNIHO",
     role: "Fondatrice & Wedding Planner",
-    photo: "https://picsum.photos/seed/eae-team-01/500/600",
+    image: "/images/photo1.jpg",
   },
   {
     name: "Mike-Aurel ZOLA",
     role: "Coordinateur jour-J",
-    photo: "https://picsum.photos/seed/eae-team-02/500/600",
+    image: "/images/photo2.jpg",
   },
   {
     name: "Honorat BOAVENTURA",
     role: "Décorateur floral",
-    photo: "https://picsum.photos/seed/eae-team-03/500/600",
+    image: "/images/photo3.jpg",
   },
   {
     name: "Fulbert DANSOU",
     role: "Photographe & vidéaste",
-    photo: "https://picsum.photos/seed/eae-team-04/500/600",
+    image: "/images/photo4.jpg",
   },
 ];
