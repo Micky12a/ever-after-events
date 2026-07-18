@@ -1,9 +1,7 @@
 import Reveal from "./ui/Reveal";
 
-// TODO équipe Design : remplacer l'image de fond par la vidéo golden hour
-// bouclée prévue au cahier des charges (<video autoPlay muted loop playsInline
-// poster="..."> < 5 Mo, cf. §5). Image placeholder en attendant.
-const HERO_IMAGE = "https://picsum.photos/seed/eae-hero/1920/1280";
+const HERO_VIDEO = "/videos/hero.mp4";
+const HERO_POSTER = "/images/hero-poster.jpg";
 
 export default function Hero() {
   return (
@@ -11,10 +9,18 @@ export default function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-bordeaux-deep"
     >
-      <img
-        src={HERO_IMAGE}
-        alt="Couple de mariés au coucher du soleil"
+      {/* Vidéo de fond bouclée */}
+      <video
         className="absolute inset-0 h-full w-full object-cover"
+        src={HERO_VIDEO}
+        poster={HERO_POSTER}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+        tabIndex={-1}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-bordeaux-deep/70 via-bordeaux-deep/40 to-bordeaux-deep/80" />
 
